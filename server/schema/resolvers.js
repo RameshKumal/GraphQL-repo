@@ -2,6 +2,7 @@ const { userList, moviesList } = require("../FakeData");
 const _ = require("lodash");
 
 const resolvers = {
+  /*Query resolver */
   Query: {
     users: () => {
       return userList;
@@ -21,6 +22,7 @@ const resolvers = {
     },
   },
 
+  /*User Resolver */
   User: {
     favouriteMovies: () => {
       return _.filter(
@@ -29,6 +31,8 @@ const resolvers = {
       );
     },
   },
+
+  /*mutation resolver */
   Mutation: {
     createUser: (parent, args) => {
       const user = args.input;

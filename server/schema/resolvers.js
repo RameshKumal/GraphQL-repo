@@ -37,6 +37,27 @@ const resolvers = {
       userList.push(user);
       return user;
     },
+
+    updateUser: (parent, args) => {
+      const { id, newUserName } = args.input;
+      let updatedUser;
+      userList.forEach((user) => {
+        if (user.id === Number(id)) {
+          user.username = newUserName;
+          updatedUser = user;
+        }
+      });
+      return updatedUser;
+    },
+
+    deleteUser: (parent, args) => {
+      const id  = args.id;
+      // let userData = userList.filter((user) => {
+      //   return user.id !== Number(id);
+      // });
+     _.remove(userList, (user) => user.id === Number(id))
+      return null;
+    },
   },
 };
 

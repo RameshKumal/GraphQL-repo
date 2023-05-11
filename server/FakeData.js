@@ -4,7 +4,7 @@ exports.userList = [
     name: "John Doe",
     username: "johndoe123",
     age: 27,
-    nationality: "American",
+    nationality: "AMERICAN",
   },
 
   {
@@ -12,7 +12,16 @@ exports.userList = [
     name: "Maria Rodriguez",
     username: "mariarodz",
     age: 34,
-    nationality: "Mexican",
+    nationality: "MEXICAN",
+    friends: [
+      {
+        id: 2,
+        name: "Maria Rodriguez",
+        username: "mariarodz",
+        age: 34,
+        nationality: "MEXICAN",
+      },
+    ],
   },
 
   {
@@ -20,7 +29,7 @@ exports.userList = [
     name: "Hassan Ali",
     username: "hassanali",
     age: 22,
-    nationality: "Pakistani",
+    nationality: "PAKISTANI",
   },
 
   {
@@ -28,7 +37,23 @@ exports.userList = [
     name: "Sophie Johnson",
     username: "sophiej",
     age: 41,
-    nationality: "British",
+    nationality: "BRITISH",
+    friends: [
+      {
+        id: 3,
+        name: "Hassan Ali",
+        username: "hassanali",
+        age: 22,
+        nationality: "PAKISTANI",
+      },
+      {
+        id: 2,
+        name: "Maria Rodriguez",
+        username: "mariarodz",
+        age: 34,
+        nationality: "MEXICAN",
+      },
+    ],
   },
 
   {
@@ -36,7 +61,16 @@ exports.userList = [
     name: "Ahmed Hassan",
     username: "ahmedhassan",
     age: 29,
-    nationality: "Egyptian",
+    nationality: "EGYPTIAN",
+    friends: [
+      {
+        id: 2,
+        name: "Maria Rodriguez",
+        username: "mariarodz",
+        age: 34,
+        nationality: "MEXICAN",
+      },
+    ],
   },
 
   {
@@ -44,6 +78,45 @@ exports.userList = [
     name: "Lena Kim",
     username: "lenak",
     age: 25,
-    nationality: "South Korean",
+    nationality: "SOUTHKOREAN",
+  },
+];
+
+exports.moviesList = [
+  {
+    id: "1",
+    name: "Avengers: Endgame",
+    releaseYear: "2019",
+    isInTheaters: false,
+  },
+  {
+    id: "2",
+    name: "Joker",
+    releaseYear: "2019",
+    isInTheaters: false,
+  },
+  {
+    id: "3",
+    name: "Black Panther",
+    releaseYear: "2018",
+    isInTheaters: false,
+  },
+  {
+    id: "4",
+    name: "Spider-Man: No Way Home",
+    releaseYear: "2021",
+    isInTheaters: true,
+  },
+  {
+    id: "5",
+    name: "Wonder Woman 1984",
+    releaseYear: "2020",
+    isInTheaters: false,
+  },
+  {
+    id: "6",
+    name: "The Dark Knight",
+    releaseYear: "2008",
+    isInTheaters: false,
   },
 ];
